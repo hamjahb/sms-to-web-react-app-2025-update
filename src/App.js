@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import AllMessageContainer from './pages/AllMessageContainer'
+
 
 
 class App extends Component {
@@ -32,7 +34,7 @@ class App extends Component {
   
         <body className="App-body">
           <h1>here will lie all text containers</h1>
-          <smsContainer/>
+          <AllMessageContainer/>
           <button onClick = {(e) => this.onButtonClick(e)} >Check for New Code</button>
         </body>
   
