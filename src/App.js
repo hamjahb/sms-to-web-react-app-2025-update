@@ -47,8 +47,7 @@ class App extends Component {
         </header>
   
         <body className="App-body">
-          <h1>here will lie all text containers</h1>
-          <AllMessageContainer smsList = {this.state.smsList}/>
+          <AllMessageContainer id='messageContainer'smsList = {this.state.smsList}/>
           <button onClick = {(e) => this.onButtonClick(e)} >Check for New Code</button>
         </body>
   

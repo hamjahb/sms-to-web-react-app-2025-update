@@ -12,9 +12,9 @@ class SmsCard extends Component {
         
         return(
         <div className ='smsCard'>
-            <h2>Number:</h2>
+            <h3>Number:</h3>
             <p>{this.props.sms.phone}</p>
-            <h2>Text:</h2>
+            <h3>Text:</h3>
             <p>{this.props.sms.text}</p>
         </div>
         )

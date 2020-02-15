@@ -14,7 +14,7 @@
 }
 
 .App-body {
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .App-footer {
@@ -28,6 +28,15 @@
   color: white;
 }
 
+.messageContainer{
+  display: flex;
+}
+
+.smsCard{
+  border:solid 2px #282c34 ;
+  margin: 10px;
+  
+}
 
 .App-link {
   color: #61dafb;
