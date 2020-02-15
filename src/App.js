@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import axios from 'axios';
+
+
+
+// import pages and componenets
 import AllMessageContainer from './pages/AllMessageContainer'
 
 
@@ -16,7 +21,13 @@ class App extends Component {
   
   onButtonClick() {
     console.log('button is clicked');
-    
+    axios.get('https://obscure-lowlands-72494.herokuapp.com/all')
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
   }
   
   render() {
