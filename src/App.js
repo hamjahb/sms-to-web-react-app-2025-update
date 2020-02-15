@@ -16,6 +16,7 @@ function App() {
       <body className="App-body">
         <h1>here will lie all text containers</h1>
         <smsContainer/>
+        <button>Check for New Code</button>
       </body>
 
       <footer className="App-footer">
