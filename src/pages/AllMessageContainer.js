@@ -1,17 +1,26 @@
 import React, {Component} from 'react';
+import SmsCard from './SmsCard'
 
 
 class AllMessageContainer extends Component {
-    constructor(props){
-        super (props)
+    render() {
         
-      }
+        console.log (this.props.smsList)
 
-      render() {
-          return(
-              <h5>message container</h5>
-          )
-      }
+        const cardRender = this.props.smsList.map((sms) => {
+            return (
+                <SmsCard sms={sms}/>
+            )
+        })
+
+        // show empty if no sms
+        return(
+            cardRender? cardRender: null
+        )
+        return (
+            <h1>{this.props.smsList}</h1>
+        )
+    }
 
 }
 

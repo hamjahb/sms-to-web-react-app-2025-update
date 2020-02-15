@@ -24,6 +24,9 @@ class App extends Component {
     axios.get('https://obscure-lowlands-72494.herokuapp.com/all')
     .then(response => {
       console.log(response.data);
+      this.setState({
+        smsList: response.data
+      }) 
     })
     .catch(error => {
       console.log(error);
@@ -45,7 +48,7 @@ class App extends Component {
   
         <body className="App-body">
           <h1>here will lie all text containers</h1>
-          <AllMessageContainer/>
+          <AllMessageContainer smsList = {this.state.smsList}/>
           <button onClick = {(e) => this.onButtonClick(e)} >Check for New Code</button>
         </body>
   
