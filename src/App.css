@@ -29,12 +29,22 @@
 }
 
 .messageContainer{
-  display: flex;
+  display: grid;
+  text-align: center;
+
 }
 
 .smsCard{
   border:solid 2px #282c34 ;
   margin: 10px;
+
+  display: inline-table;
+  max-width: 34vh;
+  box-shadow: 5px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px 10px 10px 10px;
+  margin: 10px;
+  background: whitesmoke;
   
 }
 
