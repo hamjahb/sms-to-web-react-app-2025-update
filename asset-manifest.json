@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sms-to-web-react-app/static/css/main.334ecf6f.chunk.css",
+    "main.js": "/sms-to-web-react-app/static/js/main.51a97a09.chunk.js",
+    "main.js.map": "/sms-to-web-react-app/static/js/main.51a97a09.chunk.js.map",
+    "runtime-main.js": "/sms-to-web-react-app/static/js/runtime-main.db326b68.js",
+    "runtime-main.js.map": "/sms-to-web-react-app/static/js/runtime-main.db326b68.js.map",
+    "static/js/2.16abde08.chunk.js": "/sms-to-web-react-app/static/js/2.16abde08.chunk.js",
+    "static/js/2.16abde08.chunk.js.map": "/sms-to-web-react-app/static/js/2.16abde08.chunk.js.map",
+    "index.html": "/sms-to-web-react-app/index.html",
+    "precache-manifest.eaec79a10640f1b313b908460f592d7e.js": "/sms-to-web-react-app/precache-manifest.eaec79a10640f1b313b908460f592d7e.js",
+    "service-worker.js": "/sms-to-web-react-app/service-worker.js",
+    "static/css/main.334ecf6f.chunk.css.map": "/sms-to-web-react-app/static/css/main.334ecf6f.chunk.css.map",
+    "static/js/2.16abde08.chunk.js.LICENSE.txt": "/sms-to-web-react-app/static/js/2.16abde08.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db326b68.js",
+    "static/js/2.16abde08.chunk.js",
+    "static/css/main.334ecf6f.chunk.css",
+    "static/js/main.51a97a09.chunk.js"
+  ]
+}
