@@ -4,9 +4,7 @@ import SmsCard from './SmsCard'
 
 class AllMessageContainer extends Component {
     render() {
-        
         console.log (this.props.smsList)
-
         const cardRender = this.props.smsList.map((sms) => {
             return (
                 <SmsCard sms={sms}/>
@@ -16,6 +14,7 @@ class AllMessageContainer extends Component {
         // show empty if no sms
         return(
             cardRender? cardRender: null
+            
         )
         return (
             <h1>{this.props.smsList}</h1>
