@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "263221eb48870d8774ab326535390c7e",
+    "revision": "4afd1ca1af7a2e66fa1842fb59b55402",
     "url": "/sms-to-web-react-app/index.html"
   },
   {
-    "revision": "7808aff35296dbf278d2",
+    "revision": "2ef93192d365f1b4afec",
     "url": "/sms-to-web-react-app/static/css/main.334ecf6f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sms-to-web-react-app/static/js/2.436df4df.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7808aff35296dbf278d2",
-    "url": "/sms-to-web-react-app/static/js/main.9b19ff6e.chunk.js"
+    "revision": "2ef93192d365f1b4afec",
+    "url": "/sms-to-web-react-app/static/js/main.7ddddc39.chunk.js"
   },
   {
     "revision": "86309789dcfb19a800c5",
