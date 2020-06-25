@@ -15,15 +15,56 @@ class App extends Component {
     super (props)
     
     this.state = {
-      smsList: [],
-      hanadySmsList: [],
-      mofarehSmsList: []
+      smsList: []
     }
   }
   
+  smsListReset() {
+    this.setState({
+      smsList: []
+    })
+  }
+
   onButtonClick() {
-    console.log('button is clicked');
+    console.log('hisham button is clicked');
+    this.smsListReset()
+    console.log('list reset');
+    
     axios.get('https://obscure-lowlands-72494.herokuapp.com/all')
+    .then(response => {
+      console.log(response.data);
+      this.setState({
+        smsList: response.data
+      }) 
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
+
+
+  onHanadyButtonClick() {
+    console.log('hanady button is clicked');
+    this.smsListReset()
+    console.log('list reset');
+    axios.get('https://obscure-lowlands-72494.herokuapp.com/hanadyapi')
+    .then(response => {
+      console.log(response.data);
+      this.setState({
+        smsList: response.data
+      }) 
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
+
+
+  onMofarehButtonClick() {
+    console.log('mofareh button is clicked');
+    this.smsListReset()
+    console.log('list reset');
+    axios.get('https://obscure-lowlands-72494.herokuapp.com/mofarehapi')
     .then(response => {
       console.log(response.data);
       this.setState({
@@ -51,7 +92,9 @@ class App extends Component {
         <body className="App-body">
           <AllMessageContainer id='messageContainer'smsList = {this.state.smsList}/>
         </body>
-          <button onClick = {(e) => this.onButtonClick(e)} >Check for New Code</button>
+          <button onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</button>
+          <button onClick = {(e) => this.onHanadyButtonClick(e)} >Check hanady New Code at ***40 </button>
+          <button onClick = {(e) => this.onMofarehButtonClick(e)} >Check mofareh New Code at ***40</button>
   
         <footer className="App-footer">
           <p>created by Hisham Aljahbli</p>
