@@ -93,8 +93,8 @@ class App extends Component {
           <AllMessageContainer id='messageContainer'smsList = {this.state.smsList}/>
         </body>
           <button onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</button>
-          <button onClick = {(e) => this.onHanadyButtonClick(e)} >Check hanady New Code at ***40 </button>
-          <button onClick = {(e) => this.onMofarehButtonClick(e)} >Check mofareh New Code at ***40</button>
+          <button onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </button>
+          <button onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</button>
   
         <footer className="App-footer">
           <p>created by Hisham Aljahbli</p>
