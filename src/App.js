@@ -3,6 +3,10 @@ import './App.css';
 
 import axios from 'axios';
 
+// import fontawesome 
+import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
+
+
 
 
 // import pages and componenets
@@ -75,6 +79,23 @@ class App extends Component {
       console.log(error);
     });
   }
+
+
+  onTahaniButtonClick() {
+    console.log('Tahani button is clicked');
+    this.smsListReset()
+    console.log('list reset');
+    axios.get('https://obscure-lowlands-72494.herokuapp.com/tahaniapi')
+    .then(response => {
+      console.log(response.data);
+      this.setState({
+        smsList: response.data
+      }) 
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
   
   render() {
     
@@ -82,11 +103,11 @@ class App extends Component {
       <div className="App">
   
         <head>
-          <title>Hisham Code retriver</title>
+          <title>Almudhan SMS Code retriver</title>
         </head>
   
         <header className="App-header">
-          <p>this page shows any sms messages recived by hisham</p>
+          <p>this page shows any sms messages recived by Almudhan family</p>
         </header>
   
         <body className="App-body">
@@ -95,9 +116,14 @@ class App extends Component {
           <button onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</button>
           <button onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </button>
           <button onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</button>
-  
+          <button onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</button>
+
+          
         <footer className="App-footer">
           <p>created by Hisham Aljahbli</p>
+          <a href="https://www.linkedin.com/in/haljahbli-softwareeng" target= "blank"> <FaLinkedin/></a>
+            <a href="https://github.com/hamjahb" target= "blank"><FaGithub/></a>
+            <a href="mailto:h.aljahbli@gmail.com"><FaEnvelope/></a>
         </footer>
       </div>
     );
