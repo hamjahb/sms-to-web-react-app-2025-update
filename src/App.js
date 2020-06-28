@@ -27,13 +27,13 @@ class App extends Component {
   }
 
   onButtonClick() {
-    console.log('hisham button is clicked');
+    // console.log('hisham button is clicked');
     this.smsListReset()
     console.log('list reset');
     
     axios.get('https://obscure-lowlands-72494.herokuapp.com/hishamapi')
     .then(response => {
-      console.log(response.data);
+      // console.log(response.data);
       this.setState({
         smsList: response.data
       }) 
@@ -45,9 +45,9 @@ class App extends Component {
 
 
   onHanadyButtonClick() {
-    console.log('hanady button is clicked');
+    // console.log('hanady button is clicked');
     this.smsListReset()
-    console.log('list reset');
+    // console.log('list reset');
     axios.get('https://obscure-lowlands-72494.herokuapp.com/hanadyapi')
     .then(response => {
       console.log(response.data);
@@ -62,9 +62,9 @@ class App extends Component {
 
 
   onMofarehButtonClick() {
-    console.log('mofareh button is clicked');
+    // console.log('mofareh button is clicked');
     this.smsListReset()
-    console.log('list reset');
+    // console.log('list reset');
     axios.get('https://obscure-lowlands-72494.herokuapp.com/mofarehapi')
     .then(response => {
       console.log(response.data);
@@ -79,9 +79,9 @@ class App extends Component {
 
 
   onTahaniButtonClick() {
-    console.log('Tahani button is clicked');
+    // console.log('Tahani button is clicked');
     this.smsListReset()
-    console.log('list reset');
+    // console.log('list reset');
     axios.get('https://obscure-lowlands-72494.herokuapp.com/tahaniapi')
     .then(response => {
       console.log(response.data);

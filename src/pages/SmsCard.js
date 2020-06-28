@@ -7,9 +7,7 @@ class SmsCard extends Component {
     
     
     render(){
-        console.log(this.props.sms)
-
-        
+        // console.log(this.props.sms)
         return(
         <div className ='smsCard'>
             <h3>Number:</h3>
