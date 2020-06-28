@@ -6,9 +6,6 @@ import axios from 'axios';
 // import fontawesome 
 import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 
-
-
-
 // import pages and componenets
 import AllMessageContainer from './pages/AllMessageContainer'
 
@@ -97,8 +94,8 @@ class App extends Component {
     });
   }
   
+
   render() {
-    
     return (
       <div className="App">
   
@@ -120,10 +117,12 @@ class App extends Component {
 
           
         <footer className="App-footer">
-          <p>created by Hisham Aljahbli</p>
-          <a href="https://www.linkedin.com/in/haljahbli-softwareeng" target= "blank"> <FaLinkedin/></a>
+          <p>created by Hisham Aljahbli for Almudhan Group</p>
+          <div id='footer-nav'>
+            <a href="https://www.linkedin.com/in/haljahbli-softwareeng" target= "blank"> <FaLinkedin/></a>
             <a href="https://github.com/hamjahb" target= "blank"><FaGithub/></a>
             <a href="mailto:h.aljahbli@gmail.com"><FaEnvelope/></a>
+          </div>
         </footer>
       </div>
     );
