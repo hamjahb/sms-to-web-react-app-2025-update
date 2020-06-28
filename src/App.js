@@ -30,7 +30,7 @@ class App extends Component {
     this.smsListReset()
     console.log('list reset');
     
-    axios.get('https://obscure-lowlands-72494.herokuapp.com/all')
+    axios.get('https://obscure-lowlands-72494.herokuapp.com/hishamapi')
     .then(response => {
       console.log(response.data);
       this.setState({
