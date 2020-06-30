@@ -1,10 +1,10 @@
 .App {
   text-align: center;
+  height: auto;
 }
 
 .App-header {
   background-color: #282c34;
-  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,18 +14,22 @@
 }
 
 .App-body {
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .App-footer {
   background-color: #282c34;
-  height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+a{
+  font-size: 30px;
+  padding: 5px;
 }
 
 .messageContainer{
@@ -35,24 +39,20 @@
 .smsCard{
   border:solid 2px #282c34 ;
   margin: 10px;
-
   display: inline-table;
   max-width: 34vh;
   min-width: 34vh;
   box-shadow: 5px 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
   border-radius: 10px 10px 10px 10px;
   margin: 10px;
   background: whitesmoke;
-
   padding: 2vh;
-  
-  
 }
 
 
 button {
   margin: 10px;
+  
 }
 
 .App-link {
