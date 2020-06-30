@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sms-to-web-react-app/static/css/main.8340430c.chunk.css",
+    "main.css": "/sms-to-web-react-app/static/css/main.b2e8579a.chunk.css",
     "main.js": "/sms-to-web-react-app/static/js/main.82ab1b23.chunk.js",
     "main.js.map": "/sms-to-web-react-app/static/js/main.82ab1b23.chunk.js.map",
     "runtime-main.js": "/sms-to-web-react-app/static/js/runtime-main.9133f796.js",
@@ -8,15 +8,15 @@
     "static/js/2.a5c3b640.chunk.js": "/sms-to-web-react-app/static/js/2.a5c3b640.chunk.js",
     "static/js/2.a5c3b640.chunk.js.map": "/sms-to-web-react-app/static/js/2.a5c3b640.chunk.js.map",
     "index.html": "/sms-to-web-react-app/index.html",
-    "precache-manifest.c6594e84011c38102269742b21f60a18.js": "/sms-to-web-react-app/precache-manifest.c6594e84011c38102269742b21f60a18.js",
+    "precache-manifest.942aabab1a4d72272ab8beba3f190b99.js": "/sms-to-web-react-app/precache-manifest.942aabab1a4d72272ab8beba3f190b99.js",
     "service-worker.js": "/sms-to-web-react-app/service-worker.js",
-    "static/css/main.8340430c.chunk.css.map": "/sms-to-web-react-app/static/css/main.8340430c.chunk.css.map",
+    "static/css/main.b2e8579a.chunk.css.map": "/sms-to-web-react-app/static/css/main.b2e8579a.chunk.css.map",
     "static/js/2.a5c3b640.chunk.js.LICENSE.txt": "/sms-to-web-react-app/static/js/2.a5c3b640.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9133f796.js",
     "static/js/2.a5c3b640.chunk.js",
-    "static/css/main.8340430c.chunk.css",
+    "static/css/main.b2e8579a.chunk.css",
     "static/js/main.82ab1b23.chunk.js"
   ]
 }
