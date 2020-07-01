@@ -109,12 +109,12 @@ class App extends Component {
         </header>
   
         <body className="App-body">
-          <AllMessageContainer id='messageContainer' smsList = {this.state.smsList}/>
-        </body>
           <Button variant="outline-dark" onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</Button>
           <Button variant="outline-dark" onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </Button>
           <Button variant="outline-dark" onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</Button>
           <Button disabled variant="outline-dark" onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</Button>
+          <AllMessageContainer smsList = {this.state.smsList}/>
+        </body>
 
           
         <footer className="App-footer">
