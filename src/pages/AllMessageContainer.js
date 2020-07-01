@@ -16,11 +16,7 @@ class AllMessageContainer extends Component {
             cardRender? cardRender: null
             
         )
-        return (
-            <h1>{this.props.smsList}</h1>
-        )
     }
-
 }
 
 

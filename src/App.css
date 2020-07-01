@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  /* height: auto; */
 }
 
 .App-header {
@@ -14,7 +13,8 @@
 }
 
 .App-body {
-  min-height: 69vh;
+  min-height: 76vh;
+  text-align: center;
 }
 
 .App-footer {
@@ -32,9 +32,7 @@ a{
   padding: 5px;
 }
 
-.messageContainer{
-  display: grid;
-}
+
 
 .smsCard{
   border:solid 2px #282c34 ;
@@ -55,7 +53,5 @@ button {
   
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
