@@ -32,6 +32,7 @@ this application currently is made for a specific organization but easily change
 5. Axios
 6. REST API
 7. font Awesome
+8. React-Bootstrap
 
 ## planned to do:
 1. add security to allow only certain individuals to access.

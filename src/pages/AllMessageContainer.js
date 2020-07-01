@@ -14,7 +14,6 @@ class AllMessageContainer extends Component {
         // show empty if no sms
         return(
             cardRender? cardRender: null
-            
         )
     }
 }
