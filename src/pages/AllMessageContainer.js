@@ -5,7 +5,7 @@ import SmsCard from './SmsCard'
 class AllMessageContainer extends Component {
     render() {
         // console.log (this.props.smsList)
-        const cardRender = this.props.smsList.map((sms) => {
+        const cardRender = this.props.smsList.reverse().map((sms) => {
             return (
                 <SmsCard sms={sms}/>
             )
