@@ -9,7 +9,8 @@ import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 // import pages and componenets
 import AllMessageContainer from './pages/AllMessageContainer'
 
-
+// bootstrap imports
+import Button from 'react-bootstrap/Button';
 
 class App extends Component {
   constructor(props){
@@ -27,7 +28,7 @@ class App extends Component {
   }
 
   onButtonClick() {
-    // console.log('hisham button is clicked');
+    // console.log('hisham Button is clicked');
     this.smsListReset()
     console.log('list reset');
     
@@ -45,7 +46,7 @@ class App extends Component {
 
 
   onHanadyButtonClick() {
-    // console.log('hanady button is clicked');
+    // console.log('hanady Button is clicked');
     this.smsListReset()
     // console.log('list reset');
     axios.get('https://obscure-lowlands-72494.herokuapp.com/hanadyapi')
@@ -62,7 +63,7 @@ class App extends Component {
 
 
   onMofarehButtonClick() {
-    // console.log('mofareh button is clicked');
+    // console.log('mofareh Button is clicked');
     this.smsListReset()
     // console.log('list reset');
     axios.get('https://obscure-lowlands-72494.herokuapp.com/mofarehapi')
@@ -79,7 +80,7 @@ class App extends Component {
 
 
   onTahaniButtonClick() {
-    // console.log('Tahani button is clicked');
+    // console.log('Tahani Button is clicked');
     this.smsListReset()
     // console.log('list reset');
     axios.get('https://obscure-lowlands-72494.herokuapp.com/tahaniapi')
@@ -108,12 +109,12 @@ class App extends Component {
         </header>
   
         <body className="App-body">
-          <AllMessageContainer id='messageContainer'smsList = {this.state.smsList}/>
+          <AllMessageContainer id='messageContainer' smsList = {this.state.smsList}/>
         </body>
-          <button onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</button>
-          <button onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </button>
-          <button onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</button>
-          <button onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</button>
+          <Button variant="outline-dark" onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</Button>
+          <Button variant="outline-dark" onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </Button>
+          <Button variant="outline-dark" onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</Button>
+          <Button disabled variant="outline-dark" onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</Button>
 
           
         <footer className="App-footer">
