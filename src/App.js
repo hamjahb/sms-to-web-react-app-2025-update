@@ -27,6 +27,25 @@ class App extends Component {
     })
   }
 
+
+  onTestButtonClick() {
+    // console.log('TEST Button is clicked');
+    this.smsListReset()
+    console.log('list reset');
+    
+    axios.get('http://localhost:5000/testapi')
+    .then(response => {
+      // console.log(response.data);
+      this.setState({
+        smsList: response.data
+      }) 
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
+
+
   onButtonClick() {
     // console.log('hisham Button is clicked');
     this.smsListReset()
@@ -109,10 +128,11 @@ class App extends Component {
         </header>
   
         <body className="App-body">
-          <Button variant="outline-dark" onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</Button>
-          <Button variant="outline-dark" onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </Button>
-          <Button variant="outline-dark" onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</Button>
-          <Button disabled variant="outline-dark" onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</Button>
+          {/* <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e)} >Check TEST New Code at ***88</Button> */}
+          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</Button>
+          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </Button>
+          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</Button>
+          <Button disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</Button>
           <AllMessageContainer smsList = {this.state.smsList}/>
         </body>
 
