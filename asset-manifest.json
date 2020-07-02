@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/sms-to-web-react-app/static/css/main.54a65dc4.chunk.css",
-    "main.js": "/sms-to-web-react-app/static/js/main.60e1a3a5.chunk.js",
-    "main.js.map": "/sms-to-web-react-app/static/js/main.60e1a3a5.chunk.js.map",
+    "main.css": "/sms-to-web-react-app/static/css/main.c91d4092.chunk.css",
+    "main.js": "/sms-to-web-react-app/static/js/main.3a0fc9d2.chunk.js",
+    "main.js.map": "/sms-to-web-react-app/static/js/main.3a0fc9d2.chunk.js.map",
     "runtime-main.js": "/sms-to-web-react-app/static/js/runtime-main.9133f796.js",
     "runtime-main.js.map": "/sms-to-web-react-app/static/js/runtime-main.9133f796.js.map",
     "static/css/2.af3c1da9.chunk.css": "/sms-to-web-react-app/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.47fdfafb.chunk.js": "/sms-to-web-react-app/static/js/2.47fdfafb.chunk.js",
-    "static/js/2.47fdfafb.chunk.js.map": "/sms-to-web-react-app/static/js/2.47fdfafb.chunk.js.map",
+    "static/js/2.403be91f.chunk.js": "/sms-to-web-react-app/static/js/2.403be91f.chunk.js",
+    "static/js/2.403be91f.chunk.js.map": "/sms-to-web-react-app/static/js/2.403be91f.chunk.js.map",
     "index.html": "/sms-to-web-react-app/index.html",
-    "precache-manifest.ac25127fa740d4594882272398f35789.js": "/sms-to-web-react-app/precache-manifest.ac25127fa740d4594882272398f35789.js",
+    "precache-manifest.14bb0ba4455cfff480d7254bcda7a616.js": "/sms-to-web-react-app/precache-manifest.14bb0ba4455cfff480d7254bcda7a616.js",
     "service-worker.js": "/sms-to-web-react-app/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/sms-to-web-react-app/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.54a65dc4.chunk.css.map": "/sms-to-web-react-app/static/css/main.54a65dc4.chunk.css.map",
-    "static/js/2.47fdfafb.chunk.js.LICENSE.txt": "/sms-to-web-react-app/static/js/2.47fdfafb.chunk.js.LICENSE.txt"
+    "static/css/main.c91d4092.chunk.css.map": "/sms-to-web-react-app/static/css/main.c91d4092.chunk.css.map",
+    "static/js/2.403be91f.chunk.js.LICENSE.txt": "/sms-to-web-react-app/static/js/2.403be91f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9133f796.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.47fdfafb.chunk.js",
-    "static/css/main.54a65dc4.chunk.css",
-    "static/js/main.60e1a3a5.chunk.js"
+    "static/js/2.403be91f.chunk.js",
+    "static/css/main.c91d4092.chunk.css",
+    "static/js/main.3a0fc9d2.chunk.js"
   ]
 }
