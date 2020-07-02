@@ -11,6 +11,7 @@ import AllMessageContainer from './pages/AllMessageContainer'
 
 // bootstrap imports
 import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar'
 
 class App extends Component {
   constructor(props){
@@ -123,9 +124,18 @@ class App extends Component {
           <title>Almudhan SMS Code retriver</title>
         </head>
   
-        <header className="App-header">
-          <p>this page shows any sms messages recived by Almudhan family</p>
-        </header>
+        <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="http://almudhan.com.sa/" target= "blank">
+            <img
+              alt="Almudhan Group Logo"
+              src="http://almudhan.com.sa/images/logo.png?v=1"
+              width="40"
+              height="40"
+              className="d-inline-block"
+            />{' '} Almudhan Group
+          </Navbar.Brand>
+
+        </Navbar>
   
         <body className="App-body">
           {/* <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e)} >Check TEST New Code at ***88</Button> */}
@@ -136,15 +146,16 @@ class App extends Component {
           <AllMessageContainer smsList = {this.state.smsList}/>
         </body>
 
-          
-        <footer className="App-footer">
-          <p>created by Hisham Aljahbli for Almudhan Group</p>
-          <div id='footer-nav'>
-            <a href="https://www.linkedin.com/in/haljahbli-softwareeng" target= "blank"> <FaLinkedin/></a>
-            <a href="https://github.com/hamjahb" target= "blank"><FaGithub/></a>
-            <a href="mailto:h.aljahbli@gmail.com"><FaEnvelope/></a>
-          </div>
-        </footer>
+        <Navbar bg="dark" className="justify-content-center">
+          <footer className="App-footer">
+            <p>created by Hisham Aljahbli for Almudhan Group</p>
+            <div id='footer-nav'>
+              <a href="https://www.linkedin.com/in/haljahbli-softwareeng" target= "blank"> <FaLinkedin/></a>
+              <a href="https://github.com/hamjahb" target= "blank"><FaGithub/></a>
+              <a href="mailto:h.aljahbli@gmail.com"><FaEnvelope/></a>
+            </div>
+          </footer>
+        </Navbar>
       </div>
     );
     
