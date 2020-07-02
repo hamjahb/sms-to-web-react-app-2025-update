@@ -3,17 +3,17 @@
   "name": "Almudhan Group SMS retriver",
   "icons": [
     {
-      "src": "http://almudhan.com.sa/images/favicon.ico",
+      "src": "http://almudhan.com.sa/images/logo.png?v=1",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "http://almudhan.com.sa/images/favicon.ico",
+      "src": "http://almudhan.com.sa/images/logo.png?v=1",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "http://almudhan.com.sa/images/favicon.ico",
+      "src": "http://almudhan.com.sa/images/logo.png?v=1",
       "type": "image/png",
       "sizes": "512x512"
     }
