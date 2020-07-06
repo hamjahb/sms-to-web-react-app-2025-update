@@ -98,6 +98,23 @@ class App extends Component {
     });
   }
 
+  
+  onHananButtonClick() {
+    // console.log('Hanan Button is clicked');
+    this.smsListReset()
+    // console.log('list reset');
+    axios.get('https://obscure-lowlands-72494.herokuapp.com/hananapi')
+    .then(response => {
+      console.log(response.data);
+      this.setState({
+        smsList: response.data
+      }) 
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
+
 
   onMofarehButtonClick() {
     // console.log('mofareh Button is clicked');
@@ -158,6 +175,7 @@ class App extends Component {
           {/* <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e)} >Check TEST New Code at ***88</Button> */}
           <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onAliButtonClick(e)} >Check Ali New Code at ****</Button>
           <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </Button>
+          <Button disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onHananButtonClick(e)} >Check Hanan New Code at **** </Button>
           <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</Button>
           <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</Button>
           <Button disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</Button>
