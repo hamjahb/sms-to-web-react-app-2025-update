@@ -98,7 +98,7 @@ class App extends Component {
     });
   }
 
-  
+
   onHananButtonClick() {
     // console.log('Hanan Button is clicked');
     this.smsListReset()
@@ -173,7 +173,7 @@ class App extends Component {
   
         <body className="App-body">
           {/* <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e)} >Check TEST New Code at ***88</Button> */}
-          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onAliButtonClick(e)} >Check Ali New Code at ****</Button>
+          <Button disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onAliButtonClick(e)} >Check Ali New Code at ****</Button>
           <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </Button>
           <Button disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onHananButtonClick(e)} >Check Hanan New Code at **** </Button>
           <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</Button>
