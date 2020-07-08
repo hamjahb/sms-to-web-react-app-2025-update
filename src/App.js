@@ -13,7 +13,9 @@ import AllMessageContainer from './pages/AllMessageContainer'
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar'
 
+// standardized URL for API
 const APIURL = 'https://obscure-lowlands-72494.herokuapp.com/'
+
 
 class App extends Component {
   constructor(props){
@@ -70,10 +72,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-  
-        <head>
-          <title>Almudhan SMS Code retriver</title>
-        </head>
+
   
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="http://almudhan.com.sa/" target= "blank">
@@ -91,10 +90,10 @@ class App extends Component {
           <Button value = 'test' variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e.target.value)} >Check TEST New Code at ***88</Button>
           <Button value = 'ali' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Ali New Code at **06</Button>
           <Button value = 'hanady' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanady New Code at ***40 </Button>
-          <Button value = 'hanan' disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanan New Code at **** </Button>
+          <Button disabled value = 'hanan' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanan New Code at **** </Button>
           <Button value = 'hisham' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hisham New Code at ***88</Button>
           <Button value = 'mofareh' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Mofareh New Code at ***40</Button>
-          <Button value = 'tahani' disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Tahani New Code at ***36</Button>
+          <Button disabled value = 'tahani'  variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Tahani New Code at ***36</Button>
           <AllMessageContainer smsList = {this.state.smsList}/>
         </body>
 
