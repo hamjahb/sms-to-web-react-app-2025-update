@@ -13,6 +13,8 @@ import AllMessageContainer from './pages/AllMessageContainer'
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar'
 
+const APIURL = 'https://obscure-lowlands-72494.herokuapp.com/'
+
 class App extends Component {
   constructor(props){
     super (props)
@@ -26,15 +28,15 @@ class App extends Component {
     this.setState({
       smsList: []
     })
+    console.log('list reset');
   }
 
 
-  onTestButtonClick() {
-    // console.log('TEST Button is clicked');
+  // used for testing test button ONLY
+  onTestButtonClick(value) {
+    console.log(value);
     this.smsListReset()
-    console.log('list reset');
-    
-    axios.get('http://localhost:5000/testapi')
+    axios.get('http://localhost:5000/' + value +'api')
     .then(response => {
       // console.log(response.data);
       this.setState({
@@ -47,11 +49,12 @@ class App extends Component {
   }
 
 
-  onAliButtonClick() {
-    // console.log('ali Button is clicked');
+  // production button click
+  onButtonClick(value) {
+    // console.log( value + ' Button is clicked');
+    // console.log(APIURL + value + 'api');
     this.smsListReset()
-    console.log('list reset');
-    axios.get('https://obscure-lowlands-72494.herokuapp.com/aliapi')
+    axios.get(APIURL + value + 'api')
     .then(response => {
       // console.log(response.data);
       this.setState({
@@ -63,92 +66,6 @@ class App extends Component {
     });
   }
 
-
-  onButtonClick() {
-    // console.log('hisham Button is clicked');
-    this.smsListReset()
-    console.log('list reset');
-    
-    axios.get('https://obscure-lowlands-72494.herokuapp.com/hishamapi')
-    .then(response => {
-      // console.log(response.data);
-      this.setState({
-        smsList: response.data
-      }) 
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  }
-
-
-  onHanadyButtonClick() {
-    // console.log('hanady Button is clicked');
-    this.smsListReset()
-    // console.log('list reset');
-    axios.get('https://obscure-lowlands-72494.herokuapp.com/hanadyapi')
-    .then(response => {
-      console.log(response.data);
-      this.setState({
-        smsList: response.data
-      }) 
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  }
-
-
-  onHananButtonClick() {
-    // console.log('Hanan Button is clicked');
-    this.smsListReset()
-    // console.log('list reset');
-    axios.get('https://obscure-lowlands-72494.herokuapp.com/hananapi')
-    .then(response => {
-      console.log(response.data);
-      this.setState({
-        smsList: response.data
-      }) 
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  }
-
-
-  onMofarehButtonClick() {
-    // console.log('mofareh Button is clicked');
-    this.smsListReset()
-    // console.log('list reset');
-    axios.get('https://obscure-lowlands-72494.herokuapp.com/mofarehapi')
-    .then(response => {
-      console.log(response.data);
-      this.setState({
-        smsList: response.data
-      }) 
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  }
-
-
-  onTahaniButtonClick() {
-    // console.log('Tahani Button is clicked');
-    this.smsListReset()
-    // console.log('list reset');
-    axios.get('https://obscure-lowlands-72494.herokuapp.com/tahaniapi')
-    .then(response => {
-      console.log(response.data);
-      this.setState({
-        smsList: response.data
-      }) 
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  }
-  
 
   render() {
     return (
@@ -171,13 +88,13 @@ class App extends Component {
         </Navbar>
   
         <body className="App-body">
-          {/* <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e)} >Check TEST New Code at ***88</Button> */}
-          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onAliButtonClick(e)} >Check Ali New Code at **06</Button>
-          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onHanadyButtonClick(e)} >Check Hanady New Code at ***40 </Button>
-          <Button disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onHananButtonClick(e)} >Check Hanan New Code at **** </Button>
-          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e)} >Check Hisham New Code at ***88</Button>
-          <Button variant="outline-dark" size="lg" block onClick = {(e) => this.onMofarehButtonClick(e)} >Check Mofareh New Code at ***40</Button>
-          <Button disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onTahaniButtonClick(e)} >Check Tahani New Code at ***36</Button>
+          <Button value = 'test' variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e.target.value)} >Check TEST New Code at ***88</Button>
+          <Button value = 'ali' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Ali New Code at **06</Button>
+          <Button value = 'hanady' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanady New Code at ***40 </Button>
+          <Button value = 'hanan' disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanan New Code at **** </Button>
+          <Button value = 'hisham' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hisham New Code at ***88</Button>
+          <Button value = 'mofareh' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Mofareh New Code at ***40</Button>
+          <Button value = 'tahani' disabled variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Tahani New Code at ***36</Button>
           <AllMessageContainer smsList = {this.state.smsList}/>
         </body>
 
