@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 class SmsCard extends Component {
     timeSince(date) {
-        let seconds = Math.floor(((new Date().getTime()/1000) - date)),
+        let seconds = Math.floor(((new Date(Date.UTC(0 ,0,0,0,0,0,0)).getTime()/1000) - date)),
         interval = Math.floor(seconds / 31536000);
         
         if (interval > 1) return interval + "y ago";
