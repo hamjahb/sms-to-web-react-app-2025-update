@@ -34,7 +34,7 @@ class App extends Component {
   }
 
 
-  // used for testing test button ONLY
+  // used for testing test button ONLY with local host environment
   onTestButtonClick(value) {
     console.log(value);
     this.smsListReset()
@@ -73,7 +73,6 @@ class App extends Component {
     return (
       <div className="App">
 
-  
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="http://almudhan.com.sa/" target= "blank">
             <img
@@ -86,7 +85,7 @@ class App extends Component {
           </Navbar.Brand>
         </Navbar>
   
-        <body className="App-body">
+        <main className="App-body">
           <Button value = 'test' variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e.target.value)} >Check TEST New Code at ***88</Button>
           <Button value = 'ali' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Ali New Code at **06</Button>
           <Button value = 'hanady' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanady New Code at ***40 </Button>
@@ -95,7 +94,7 @@ class App extends Component {
           <Button value = 'mofareh' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Mofareh New Code at ***40</Button>
           <Button disabled value = 'tahani'  variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Tahani New Code at ***36</Button>
           <AllMessageContainer smsList = {this.state.smsList}/>
-        </body>
+        </main>
 
         <Navbar bg="dark" className="justify-content-center">
           <footer className="App-footer">
