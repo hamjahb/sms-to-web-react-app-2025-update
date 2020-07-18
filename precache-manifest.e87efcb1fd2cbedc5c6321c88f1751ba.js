@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbf9dcd080d25044228183f3691433e1",
+    "revision": "da9ef0573d049325bbb27f911c00994f",
     "url": "/sms-to-web-react-app/index.html"
   },
   {
-    "revision": "dd5bd3c5722c6e1cc9e1",
+    "revision": "295ec5a1951db7cbfd9f",
     "url": "/sms-to-web-react-app/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "c78286866df5b01b331d",
+    "revision": "5b71cf08abaf2d89d6d4",
     "url": "/sms-to-web-react-app/static/css/main.c91d4092.chunk.css"
   },
   {
-    "revision": "dd5bd3c5722c6e1cc9e1",
-    "url": "/sms-to-web-react-app/static/js/2.ad38f31b.chunk.js"
+    "revision": "295ec5a1951db7cbfd9f",
+    "url": "/sms-to-web-react-app/static/js/2.a85d332c.chunk.js"
   },
   {
     "revision": "bfc08a62983de46a4daec9f8c3c657d8",
-    "url": "/sms-to-web-react-app/static/js/2.ad38f31b.chunk.js.LICENSE.txt"
+    "url": "/sms-to-web-react-app/static/js/2.a85d332c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c78286866df5b01b331d",
-    "url": "/sms-to-web-react-app/static/js/main.89333b5e.chunk.js"
+    "revision": "5b71cf08abaf2d89d6d4",
+    "url": "/sms-to-web-react-app/static/js/main.da386581.chunk.js"
   },
   {
     "revision": "0de80e6550e66abb6db6",
