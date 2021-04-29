@@ -88,6 +88,7 @@ class App extends Component {
         <main className="App-body">
           {/* <Button value = 'test' variant="outline-dark" size="lg" block onClick = {(e) => this.onTestButtonClick(e.target.value)} >Check TEST New Code at ***88</Button> */}
           <Button value = 'ali' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Ali New Code at **06</Button>
+          <Button value = 'edward' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Edward New Code at **05</Button>
           <Button value = 'hanady' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanady New Code at ***40 </Button>
           <Button disabled value = 'hanna' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hanna New Code at **25 </Button>
           <Button value = 'hisham' variant="outline-dark" size="lg" block onClick = {(e) => this.onButtonClick(e.target.value)} >Check Hisham New Code at ***88</Button>
