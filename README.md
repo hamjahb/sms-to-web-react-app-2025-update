@@ -3,7 +3,7 @@ this is an application made for the Almudhan group to retrive SMS messages from 
 
 ## links:
 
-[click here to go to deployed website](https://hamjahb.github.io/sms-to-web-react-app/)
+[click here to go to deployed website](https://hamjahb.github.io/sms-to-web-react-app-2025-update/)
 
 [click here to view server repo](https://github.com/hamjahb/API-text-forwarder)
 
